@@ -31,6 +31,7 @@ public class PaymentGatewayApplication {
 		
 		System.out.println("Payment Receipt is ");
 		System.out.println("Payment Status is "+receipt.getStatus());
+		System.out.println("Url is "+receipt.getUrl());
 		
 		for(String message : receipt.getMessages()) {
 			System.out.println(message);

@@ -8,6 +8,7 @@ public class Receipt {
 	public enum FinalStatus {SUCCESSFULPAYMENT, FAILEDPAYMENT, VALIDPAYMENT, INVALIDPAYMENT};
 	private FinalStatus status;
 	private List<String> messages;
+	private String url;
 	
 	public Payment getPayment() {
 		return payment;
@@ -26,6 +27,12 @@ public class Receipt {
 	}
 	public void setMessages(List<String> messages) {
 		this.messages = messages;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	
 	
